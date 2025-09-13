@@ -31,7 +31,7 @@ class samplefd(nn.Module):
 
 # ---- Load model ----
 model_path = os.path.join("models", "mnist_model.pth")
-model = CNN()
+model = samplefd()
 model.load_state_dict(torch.load(model_path, map_location="cpu"))
 model.eval()
 
